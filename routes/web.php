@@ -17,3 +17,7 @@ Route::get('/', function () {
     $users = User::all();
     return view('users', ['users'=>$users]);
 });
+
+Route::prefix('notes')->group(function() {
+ 
+});
